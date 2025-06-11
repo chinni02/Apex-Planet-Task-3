@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Interactive Web Project</h1>
+</header>
+
+<nav>
+  <a href="#quiz">Quiz</a>
+  <a href="#carousel">Carousel</a>
+  <a href="#api">Joke API</a>
+</nav>
+
+<main>
+  <!-- Quiz Section -->
+  <section class="card" id="quiz">
+    <h2>🧠 Simple Quiz</h2>
+    <p id="question">Loading question...</p>
+    <div class="quiz-buttons">
+      <button onclick="answer('a')">A</button>
+      <button onclick="answer('b')">B</button>
+    </div>
+    <p id="result"></p>
+  </section>
+
+  <!-- Image Carousel Section -->
+  <section class="card" id="carousel">
+    <h2>🖼 Image Carousel</h2>
+    <img id="carouselImage" src="https://via.placeholder.com/400x250?text=1" alt="Carousel Image"/>
+    <div class="quiz-buttons">
+      <button onclick="prev()">⏪ Prev</button>
+      <button onclick="next()">Next ⏩</button>
+    </div>
+  </section>
+
+  <!-- API Fetch Section -->
+  <section class="card" id="api">
+    <h2>😂 Random Joke</h2>
+    <button onclick="getJoke()">Get Joke</button>
+    <p id="joke" style="margin-top: 1em;"></p>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
